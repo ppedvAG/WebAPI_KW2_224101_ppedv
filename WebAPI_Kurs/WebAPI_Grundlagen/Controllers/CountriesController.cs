@@ -59,10 +59,6 @@ namespace WebAPI_Grundlagen.Controllers
         {
             Continent currentContinent = await _context.Continents.SingleAsync(e => e.Id == id);
 
-
-
-
-
             IList<Country> countries = currentContinent.Countries.ToList(); 
 
             return Ok(currentContinent.Countries.ToList().ToDTOs());

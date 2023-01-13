@@ -14,6 +14,6 @@ namespace WebAPI_Grundlagen.Data
         {
         }
 
-        public DbSet<WebAPI_Grundlagen.Models.Car> Cars { get; set; } = default!;
+        public DbSet<Car> Cars { get; set; } = default!;
     }
 }

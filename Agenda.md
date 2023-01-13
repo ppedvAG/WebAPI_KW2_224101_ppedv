@@ -23,21 +23,29 @@ Donnerstag:
 
 Freitag:
 
+
+
+
 - [ ] HttpClient (30 Minuten)
 	- [ ] CRUD abgebildet ->MVC/WEbAPI Sample
-- [ ] HttpClient mit BearerToken -> SourceCode gewünscht
-
-- [ ] Broadcast Videoübertragung via WebAPI
-- [ ] Authentifizierung via Identity UI -> User Accounts
 
 - [ ] Minimal API -> wird erst in .NET 7 interessant
-
-- [ ] Datei übertragn mit WebAPI (Projektübersicht -> SourceCode ist fertig)
-- [ ] Logging in ASP.NET Core (Serilog-Beispiel)
 - [ ] Paging u. weitere WebAPI Features -> Skip/Take für Paging / Sorting und Filtering
+- [ ] Architekturen -> Hateoas + DataShapping + OData
 
+(fertig Lösungen) 
+- [ ] Broadcast Videoübertragung via WebAPI (HttpClient)
+- [ ] (Upload / Download) -> Datei übertragn mit WebAPI (Projektübersicht -> SourceCode ist fertig)
 - [ ] Customize Formatter (VCARD) - ShowCase -> Nur Einbinden ist interssant -> 
-- [ ] Architekturen -> Hateoas + DataShapping + OData 
 
-Optionale Themen:
+[Optional]
+- [ ] Logging in ASP.NET Core (Serilog-Beispiel)
 - [ ] Konfigurationen in ASP.NET Core 
+
+
+
+
+
+Nicht relevant:
+- [ ] HttpClient mit BearerToken -> SourceCode gewünscht
+- [ ] Authentifizierung via Identity UI -> User Accounts
