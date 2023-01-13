@@ -23,13 +23,13 @@ Donnerstag:
 
 Freitag:
 
-
+- [ ] Minimal API -> wird erst in .NET 7 interessant
 
 
 - [ ] HttpClient (30 Minuten)
 	- [ ] CRUD abgebildet ->MVC/WEbAPI Sample
 
-- [ ] Minimal API -> wird erst in .NET 7 interessant
+
 - [ ] Paging u. weitere WebAPI Features -> Skip/Take für Paging / Sorting und Filtering
 - [ ] Architekturen -> Hateoas + DataShapping + OData
 

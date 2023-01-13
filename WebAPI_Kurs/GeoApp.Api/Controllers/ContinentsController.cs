@@ -20,7 +20,7 @@ namespace GeoApp.Api.Controllers
         {
             _context = context;
         }
-
+        //https://localhost:7038/api/Continents
         // GET: api/Continents
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Continent>>> GetContinents()
