@@ -4,17 +4,17 @@ PPEDV-Kurs: 12.01.2023 - WebAPI Kurs
 WebAPI:
 Donnerstag:
 - [ ] Dependency Injections 
-- [ ] Dependency Injections in WebAPI
-- [ ] ServiceCollection + ServiceProvider in Console 
-- [ ] Singleton / Scope / Transient  
-- [ ] Was ist ein RESTFul Service
-- [ ] Projektaufbau 
-- [ ] ControllerBase in aspnetcore Sourcecode
-- [ ] Return Values - Controller-Klasse
+- [x] Dependency Injections in WebAPI
+- [x] ServiceCollection + ServiceProvider in Console 
+- [x] Singleton / Scope / Transient  
+- [x] Was ist ein RESTFul Service
+- [x] Projektaufbau 
+- [x] ControllerBase in aspnetcore Sourcecode
+- [x] Return Values - Controller-Klasse
 - [ ] HTTP-Methoden (Get / Post / Put / Delete)
-- [ ] HttpVerbs in Verbindung mit Swagger (Swagger kann nicht ohne HttpVerb->z.B. HttpGet)
-- [ ] Konventionen
-- [ ] Formatter (CSV,XML)
+- [x] HttpVerbs in Verbindung mit Swagger (Swagger kann nicht ohne HttpVerb->z.B. HttpGet)
+- [x] Konventionen
+- [x] Formatter (CSV,XML)
 - [ ] ResponseCaching -> siehe WeatherForecastController.cs
 - [ ] EF Core Anbindung 
 	- [ ] InMeomoryProvider

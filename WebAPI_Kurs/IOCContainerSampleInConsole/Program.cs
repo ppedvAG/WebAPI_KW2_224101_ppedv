@@ -6,6 +6,8 @@ namespace IOCContainerSampleInConsole
     {
         static void Main(string[] args)
         {
+
+            #region Beispiel 1 
             //IServiceCollection
 
             //Initialisierungphase eines Programms
@@ -16,6 +18,7 @@ namespace IOCContainerSampleInConsole
             //TimeService als Singleton -> TimeService-Instance wird nur 1x instaanziiert und läuft solange die WebApi läuft 
             serviceCollection.AddSingleton<ITimeService, TimeService>();
 
+            
             //Pro Request wird 1x Instanz aufgebaut
             //serviceCollection.AddScoped<ITimeService, TimeService>();
 
@@ -37,8 +40,28 @@ namespace IOCContainerSampleInConsole
             ITimeService timeService1 = serviceProvider.GetRequiredService<ITimeService>();
 
             Console.WriteLine(timeService.ShowTime());
+            #endregion
 
 
+            #region Beispiel 2
+            IServiceCollection serviceCollection2 = new ServiceCollection();
+
+            serviceCollection2.AddSingleton<ITimeService, TimeService>();
+            //serviceCollection2.AddSingleton<ITimeService, TimeService2>();
+
+            serviceCollection2.AddScoped<ITimeService, TimeService2>();
+
+            IServiceProvider serviceProvider2 = serviceCollection2.BuildServiceProvider();
+
+            ITimeService welcherTimeServiceWirdGeladen = serviceProvider2.GetService<ITimeService>();
+
+            Console.WriteLine(welcherTimeServiceWirdGeladen.ShowTime());
+
+
+            //Lösungen wie man ein Interface mit mehrren Implementierungen verwenden kann:
+            // -> https://medium.com/geekculture/net6-dependency-injection-one-interface-multiple-implementations-983d490e5014
+            // -> https://learn.microsoft.com/de-de/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0
+            #endregion
         }
     }
 
@@ -63,6 +86,24 @@ namespace IOCContainerSampleInConsole
         public string ShowTime()
         {
             return _time;
+        }
+    }
+
+    public class TimeService2 : ITimeService
+    {
+        private string _time;
+
+
+        //ctor + tab + tab -> Konstruktor
+        public TimeService2()
+        {
+            _time = DateTime.Now.ToShortTimeString();
+        }
+
+
+        public string ShowTime()
+        {
+            return "TimeService2 -> " + _time;
         }
     }
 }
